@@ -54,3 +54,9 @@ variable "lambda_source_path" {
   type        = string
   default     = null
 }
+
+variable "recreate_missing_package" {
+  description = "Whether to recreate missing Lambda package if it is missing locally or not"
+  type        = string
+  default     = true
+}
